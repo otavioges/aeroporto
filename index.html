@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroporto Inteligente - T1.A1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="painel">
+        <h1>Painel de Voo</h1>
+        
+        <div id="info-voo">
+            <p><strong>Código:</strong> <span id="txt-codigo">---</span></p>
+            <p><strong>Origem:</strong> <span id="txt-origem">---</span></p>
+            <p><strong>Destino:</strong> <span id="txt-destino">---</span></p>
+            <p><strong>Horário:</strong> <span id="txt-horario">---</span></p>
+            <p><strong>Status:</strong> <span id="txt-status" class="no-solo">No Solo</span></p>
+        </div>
+
+        <div class="pista">
+            <!-- Caso não tenha imagem, ele mostrará o texto alt -->
+            <img src="azul.avif" id="aviao" alt="Avião" width="100">
+        </div>
+
+        <div class="controles">
+            <button onclick="meuVoo.decolar()">Decolar</button>
+            <button onclick="meuVoo.pousar()">Pousar</button>
+            <button onclick="meuVoo.atualizarStatus('Embarque Próximo')">Atualizar Status</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

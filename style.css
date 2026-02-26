@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.painel {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 350px;
+}
+
+#info-voo {
+    text-align: left;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.pista {
+    height: 120px;
+    border-bottom: 3px dashed #ccc;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+#aviao {
+    transition: all 1s ease-in-out;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
+
+/* Classes de Estado */
+.no-solo { color: #d9534f; font-weight: bold; }
+.em-voo { color: #5cb85c; font-weight: bold; }
+
+/* Animação de Decolagem */
+.decolando {
+    transform: translate(200px, -50px) rotate(-15deg);
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
