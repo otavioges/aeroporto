@@ -1,65 +1,36 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f2f5;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+body { font-family: sans-serif; background: #f0f2f5; padding: 20px; text-align: center; }
+.painel { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; }
+
+.card { 
+    background: white; 
+    border-radius: 10px; 
+    padding: 20px; 
+    width: 300px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-top: 8px solid #ccc;
 }
 
-.painel {
-    background: white;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 350px;
+.jato { border-top-color: #d4af37; } /* Dourado */
+.carga { border-top-color: #e67e22; } /* Laranja */
+
+.botoes { display: flex; flex-direction: column; gap: 8px; margin-top: 15px; }
+button { padding: 8px; cursor: pointer; border: none; border-radius: 4px; background: #34495e; color: white; }
+button:hover { opacity: 0.9; }
+
+.btn-super { background: #c0392b; }
+.btn-radio { background: #27ae60; }
+
+.progresso-container { background: #eee; width: 100%; height: 10px; border-radius: 5px; margin: 10px 0; overflow: hidden; }
+.barra { background: #27ae60; height: 100%; width: 0%; transition: width 0.3s; }
+
+.radio-display { 
+    margin: 30px auto; 
+    max-width: 620px; 
+    background: #222; 
+    color: #00ff00; 
+    padding: 15px; 
+    border-radius: 5px; 
+    font-family: monospace; 
 }
 
-#info-voo {
-    text-align: left;
-    background: #f8f9fa;
-    padding: 10px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.pista {
-    height: 120px;
-    border-bottom: 3px dashed #ccc;
-    margin-bottom: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-#aviao {
-    transition: all 1s ease-in-out;
-    position: absolute;
-    bottom: 5px;
-    left: 10px;
-}
-
-/* Classes de Estado */
-.no-solo { color: #d9534f; font-weight: bold; }
-.em-voo { color: #5cb85c; font-weight: bold; }
-
-/* Animação de Decolagem */
-.decolando {
-    transform: translate(200px, -50px) rotate(-15deg);
-}
-
-button {
-    padding: 10px 15px;
-    margin: 5px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
-    background: #007bff;
-    color: white;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #0056b3;
-}
+input { padding: 8px; border: 1px solid #ddd; border-radius: 4px; }
